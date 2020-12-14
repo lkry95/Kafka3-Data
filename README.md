@@ -2,6 +2,8 @@
 
 build simple consumer (python)
 
+Fork this repo, then clone from your new fork. 
+
 ## ZipBank Project
 
 We have decided to use Kafka as our main event handling infrastructure for our new bank, ZipBank.
