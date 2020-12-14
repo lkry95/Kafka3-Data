@@ -58,7 +58,7 @@ kafka-topics --create \
 --topic bank-customer-events
 ```
 
-### Your Phase1 Mission
+### Your Phase 1 Mission
 
 these scripts work. kinda. the problem is every time we re-start the consumer, we lose
 all the customer data. the reason is the coder doesn't know SQL like you do! so all the data gets
@@ -103,7 +103,7 @@ LimitConsumer should keep track of the customer ids that have current balances g
 
 ## Phase 3
 
-Add different branches for the production of transactions.
+Add multiple bank branches (locations) for the production of transactions.
 
 Each branch has a branch id, and a different partition in kafka. The consumers for each partition need to handle their branch's customer's transactions.
 
