@@ -28,7 +28,7 @@ class XactionConsumer:
             self.ledger[message['custid']] = message
 
             # add message to the transaction table in your SQL usinf SQLalchemy
-
+            self.conn.execute("INSERT INTO transaction VALUES (%s,%s,%s,%s)", message)
             if message['custid'] not in self.custBalances:
                 self.custBalances[message['custid']] = 0
             if message['type'] == 'dep':
